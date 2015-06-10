@@ -7,6 +7,10 @@
 #include "T05Touch.h"
 #include "T06Box2D.h"
 #include "T07PhysicsWorld.h"
+#include "T08RayCast.h"
+#include "T09Joint.h"
+#include "T10MultiShapes.h"
+#include "T11FlyppyBird.h"
 
 static const char * title[] = {
 	"T01CPP11",
@@ -15,7 +19,11 @@ static const char * title[] = {
 	"T04Label",
 	"T05Touch",
 	"T06Box2D",
-	"T07PhysicsWorld"
+	"T07PhysicsWorld",
+	"T08RayCast",
+	"T09Joint",
+	"T10MultiShapes",
+	"T11FlyppyBird"
 };
 
 bool TMenu::init()
@@ -38,6 +46,10 @@ bool TMenu::init()
 			else if (title[i] == "T05Touch") l = T05Touch::create();
 			else if (title[i] == "T06Box2D") l = T06Box2D::create();
 			else if (title[i] == "T07PhysicsWorld") l = T07PhysicsWorld::create();
+			else if (title[i] == "T08RayCast") l = T08RayCast::create();
+			else if (title[i] == "T09Joint") l = T09Joint::create();
+			else if (title[i] == "T10MultiShapes") l = T10MultiShapes::create();
+			else if (title[i] == "T11FlyppyBird") l = T11FlyppyBird::create();
 			if (l != NULL)
 			{
 				TBack * b = TBack::create();
